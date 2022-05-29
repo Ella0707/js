@@ -36,7 +36,7 @@ myButton.onclick = function () {
     inputIn.value = "";
     out.innerHTML = inputValue + 10;
 
-}
+};
 
 let userName = document.querySelector(".name");
 let myButton2 = document.querySelector(".greetings");
@@ -53,4 +53,29 @@ myButton2.onclick = function() {
     out2.innerHTML = ('Hello' + ' ' + nameValue + ' ' + surnameValue);
     userName.value = '';
     surname.value = '';
-}
+};
+
+
+let number1 = document.querySelector(".number1");
+let number2 = document.querySelector(".number2");
+let button3 = document.querySelector('.button3');
+let out3 = document.querySelector(".out3");
+
+button3.onclick = function() {
+    out3.innerHTML = (+number1.value + +number2.value);
+    number1.value = "";
+    number2.value = "";
+};
+
+
+let y = document.querySelector(".y");
+y.style.border = '2px solid red';
+
+let input7 = document.querySelector(".input7");
+let button4 = document.querySelector(".button4");
+
+button4.onclick = function() {
+    let valueInput7 = input7.value;
+    valueInput7 = parseInt(valueInput7);
+    console.log(valueInput7);
+};
