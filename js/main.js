@@ -79,3 +79,37 @@ button4.onclick = function() {
     valueInput7 = parseInt(valueInput7);
     console.log(valueInput7);
 };
+
+
+const b1 = document.querySelector(".b1");
+const i1 = document.querySelector(".i1");
+const out4 = document.querySelector(".out4");
+
+b1.onclick = () => {
+    let i1Value = +i1.value;
+
+    if (i1Value == 4) {
+        out3.innerHTML = i1Value;
+    }
+
+    else {
+        out4.innerHTML = "No";
+    }
+}
+
+
+
+const b2 = document.querySelector(".b2");
+const out5 = document.querySelector(".out5");
+
+b2.onclick = () => {
+    let a21 = 7;
+    let a22 = 52;
+
+    if (a21 > a22) {
+        out5.innerHTML = a21;
+    }
+    else {
+        out5.innerHTML = a22;
+    }
+}
