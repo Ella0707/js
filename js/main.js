@@ -98,18 +98,55 @@ b1.onclick = () => {
 }
 
 
+const b6 = document.querySelector(".b-6");
+const i6 = document.querySelector(".i-6");
+const out6 = document.querySelector(".out-6");
 
-const b2 = document.querySelector(".b2");
-const out5 = document.querySelector(".out5");
+b6.onclick = () => {
+    let i6Value = +i6.value;
 
-b2.onclick = () => {
-    let a21 = 7;
-    let a22 = 52;
-
-    if (a21 > a22) {
-        out5.innerHTML = a21;
+    if (i6Value % 2 == 0) {
+        out6.innerHTML = "even";
     }
+
     else {
-        out5.innerHTML = a22;
+        out6.innerHTML = "odd";
+    }
+}
+
+
+const b7 = document.querySelector(".b-7");
+const i71 = document.querySelector(".i-71");
+const i72 = document.querySelector(".i-72");
+const out7 = document.querySelector(".out-7");
+
+b7.onclick = () => {
+    let i71Value = +i71.value;
+    let i72Value = +i72.value;
+
+    out7.innerHTML = Math.pow(i71Value, i72Value);
+}
+
+// && - и
+
+// || или
+
+const b8 = document.querySelector(".b-8");
+const s8 = document.querySelector(".s-8");
+const out8 = document.querySelector(".out-8");
+
+b8.onclick = () => {
+    let s8Value = s8.value;
+
+    switch (+s8Value) {
+        case 1:
+            out8.innerHTML = "one";
+            break;
+        case 2:
+            out8.innerHTML = "two";
+            break;
+        case 3:
+            out8.innerHTML = "three";
+            break;
     }
 }
